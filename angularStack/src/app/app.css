@@ -1,4 +1,7 @@
-h1 {
-    background-color: black;
-    color: yellow;
-};
+.collection-grid {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
