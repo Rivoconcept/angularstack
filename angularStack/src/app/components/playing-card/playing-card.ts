@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 import { ItemsCollections } from '../models/ItemsCollection';
 
 @Component({
@@ -9,6 +9,6 @@ import { ItemsCollections } from '../models/ItemsCollection';
 })
 export class PlayingCard {
 
-  item = input(new ItemsCollections)
+  item: InputSignal<ItemsCollections> = input.required<ItemsCollections>()
   
 }
